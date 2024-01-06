@@ -6,29 +6,44 @@
     
 }
 body{
-    background-color: #000000;
+    background:linear-gradient(rgba(16,16,18,0.5), rgba(16,16,18,0.5)), url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
     width: 100vw;
     height: 100vh;
 }
-.main-container{
+/* #main-container{
     width: 400px;
     height: 200px;
-    background-color:#689689;
     color: #fff;
     display:flex;
     justify-content: center;
     align-items: center;
     margin-top:10%;
     border-radius: 12px;
+} */
+.glass{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border:1px solid rgba(255, 255, 255, 0.1);
+    width:400px;
+    height: 200px;
+    margin-top: 10%;
+
+
 }
 .password-container{
-    background-color:#689689;
+
     display: block;
     width:400px;
     height:200px;
     border-radius: 12px;
 }
-.password-container input{
+.glass input{
     display: block;
     margin:auto;
     border: 1px solid #689689;
@@ -38,7 +53,7 @@ body{
     text-decoration: none;
     
 }
-.password-container button{
+.glass button{
     display:block;
     background-color: #2d302d;
     color:#ccc;

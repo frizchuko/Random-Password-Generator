@@ -6,8 +6,11 @@ const generatePassword = (length = 8) => {
         let randomNumber = Math.floor(Math.random() * passwordCharacters.length);
         password += passwordCharacters[randomNumber];
     }
-    console.log (password);
+    return password;
     
 }
 generatePassword();
+
+var render = document.getElementById("generated");
+render.innerText = password;
 
